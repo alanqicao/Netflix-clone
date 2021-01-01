@@ -1,0 +1,70 @@
+.nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 20px;
+  height: 30px;
+  z-index: 1;
+
+  display: flex;
+  justify-content: space-between;
+
+  /* Animations for when scroll down it fade to black*/
+  transition-timing-function: ease-in;
+  transition: all 0.5s;
+  /* transition:all in here is add anything that chang add a fade in
+    transition-timing-function: ease-in in here is how you want to handle it ? we want ease in
+  */
+}
+.nav__black {
+  background-color: #111;
+}
+/*
+position fixed: is to always on the top, the top is where it to go
+justify-content: is to put the logo and avatar on both side but let
+flex box to adjust the space
+
+width: 100% is to put logo and avatar on the both side
+padding:20px is give the logo and avatar space between the top and side
+
+background-color: is give the navbar a background color
+
+height:30px is give the navbar the size and give background color right
+size, in here we know the size of logo and avatar so it will cover it.
+
+Now we want the navbar transparency on till we scroll down the background color showup
+we need go back to Nav.js and add some scroll listen ner to do it 
+
+z-index:1 is to put nav bar always on the top
+
+
+*/
+.nav__logo {
+  position: fixed;
+  left: 20px;
+  width: 80px;
+  object-fit: contain;
+}
+
+/* 
+width:80px is to size the logo small
+object-fix: contain is to fix the pic to fit right 
+position: fixed is to let logo to be on the top all the time
+left:20px is give you the control of how much left space you need 
+also put it on the left side
+*/
+
+.nav__avatar {
+  position: fixed;
+  right: 20px;
+  width: 30px;
+  object-fit: contain;
+}
+
+/* 
+width:30px is to size the logo small
+object-fix: contain is to fix the pic to fit right 
+position: fixed is to let logo to be on the top all the time
+right:20px is give you the control of how much left space you need 
+also put it on the right side
+*/
