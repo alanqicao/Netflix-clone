@@ -1,7 +1,21 @@
 
 .row__posters{
   display: flex;
+  overflow-y: hidden;
+  overflow-y: scroll;
+  padding: 20px;
 }
+/*  display: flex; is get pic to be horizontal
+    overflow-y: hidden; not scroll vertical 
+    overflow-y: scroll; to scroll horizontal
+    padding: 20px; when hover the pic the pic is will not cut in to the border
+*/
+.row__posters::-webkit-scrollbar{
+  display: none; 
+  
+}
+/* this get rid off scroll bar*/
+
 .row__poster{
   object-fit: contain;
   width:100%;
@@ -9,8 +23,32 @@
   transition: transform 450ms;
   margin-right: 10px;
 }
+/*  object-fit: contain; does not matter how big is the pic, when you change it will just right size
+    width:100%; max the pic
+    max-height: 100px; set height to 100px
+    transition: transform 450ms; when you hover it give you half sec time to slow transform bigger
+    margin-right: 10px; give litter space between the pic 
+*/
 
 .row__poster:hover{
   transform: scale(1.08);
-  opacity: 1;
+  
 }
+/* transform: scale(1.08); when you hover it getting little bigger */
+
+.row__posterLarge{
+  max-height: 250px;
+}
+/*
+  using isLarge boolean to set using different css class
+  and make the class pic bigger than the other row of pic
+*/
+
+.row__posterLarge:hover{
+  transform: scale(1.09)
+
+}
+/*
+ using isLarge boolean to set using different css class
+  and make the hover bigger than other row of pic
+*/
