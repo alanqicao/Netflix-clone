@@ -6,3 +6,8 @@
   Delete all css in APP.css
   By add a margin 0 it clear all the margin and following your css file 
 */
+
+.app{
+  background-color:#111;
+  
+}

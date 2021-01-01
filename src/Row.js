@@ -18,7 +18,7 @@ function Row({ title, fetchUrl, isLargeRow}) {
     fetchUrl,
   ]); /*if [] is empty, run once when the row loads,and do not run again. 
           when you put [fetchUrl], every time movies change it will run again */
-  console.log(movies);
+ 
 
   return (
     <div className="row">
