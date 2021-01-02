@@ -2,7 +2,7 @@
 # Keep Learning
 ## The purpose of building a NetFlix using React is to keep practice React skill 
 
-This NetFlix clone page have fade in banner when you scroll, API call from other website, auto play movie trailer, and some css slow fade hover.
+This NetFlix clone page have fade in Navbar when you scroll, random trending movie in the banner, API call from other website, auto play movie trailer, and some css slow fade hover.
 
 
 
