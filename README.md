@@ -4,7 +4,7 @@
 
 This NetFlix clone page have fade in banner when you scroll, API call from other website, auto play movie trailer, and some css slow fade hover.
 
-And auto play from YouTube
+
 
 Page view https://netflix-clone-32eac.web.app/
 
